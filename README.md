@@ -1,6 +1,6 @@
-#manage-users
+# manage-users
 
-##installation
+## installation
 
     npm install users-management
 ## Usage
