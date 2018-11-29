@@ -1,5 +1,6 @@
 var users = [];
 var id = 0;
+
 exports.reset = function(){
     users = [];
     id = 0;
@@ -53,6 +54,17 @@ exports.getUserByID = function(id){
     }
     else{
         return "the user does not exist.";
+    }
+}
+
+exports.getUsers = function(){
+    var index = 0;
+    if(users.length != 0){
+        index = users.length;
+        return index;
+    }
+    else{
+        return "Users aren't here!!!";
     }
 }
 
