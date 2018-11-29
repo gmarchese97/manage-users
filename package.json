@@ -1,6 +1,6 @@
 {
   "name": "users-management",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "a simple management for users",
   "main": "index.js",
   "scripts": {
