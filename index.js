@@ -41,4 +41,19 @@ exports.filteredByName = function(param1){
     }
 }
 
+exports.getUserByID = function(id){
+    var array = [];
+    for(var i = 0; i < users.length; i++){
+        if(users[i].id === id){
+            array.push(users[i]);
+        }
+    }
+    if(array != undefined){
+        return array;
+    }
+    else{
+        return "the user does not exist.";
+    }
+}
+
 this.reset();
