@@ -3,7 +3,7 @@ var COUNTER = 0;
 
 exports.reset = function(){
     users = [];
-    id = 0;
+    COUNTER = 0;
 }
 
 exports.addUser = function(param1, param2){
@@ -42,7 +42,7 @@ exports.filteredByName = function(param1){
     }
 }
 
-exports.getUserByID = function(id){
+exports.getUserByID = function(param1){
     var array = [];
     for(var i = 0; i < users.length; i++){
         if(users[i].id === id){
