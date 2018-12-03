@@ -1,5 +1,5 @@
 var users = [];
-var id = 0;
+var COUNTER = 0;
 
 exports.reset = function(){
     users = [];
@@ -14,14 +14,14 @@ exports.addUser = function(param1, param2){
     };
     user.id = id;
     users.push(user);
-    id++;
+    COUNTER++;
     return "the new user now exist.";
 }
 
 exports.deleteUser = function(param1){
     for(var i = 0; i < users.length; i++){
         if(users[i].id === param1){
-            users.splice(id, 1);
+            users.splice(i, 1);
             return users;
         }
     }
